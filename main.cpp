@@ -44,14 +44,17 @@ using namespace std;
 int main()
 {
     ofstream out("ejemplo.txt");
-    out<<"Escribiendo en un archivo.";
+    out<<"Esta es una linea.";
+    out.seekp(8);
+    out<<"Esta es una prueba.";
     out.close();
 
     ifstream in("ejemplo.txt");
+    in.seekg(-99999,in.beg);
     string str;
     getline(in,str);
 
-    cout<<"Lei: "<<str;
+    cout<<str;
 
 //    char tablero[5][5]={{' ','#',' ',' ',' '},
 //                        {'E','#',' ','#','S'},
