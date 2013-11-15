@@ -7,31 +7,13 @@
 	<File name="ArbolBinario.h" open="1" top="0" tabpos="4">
 		<Cursor position="47" topLine="0" />
 	</File>
-	<File name="Curador.cpp" open="0" top="0" tabpos="5">
-		<Cursor position="538" topLine="8" />
-	</File>
-	<File name="Curador.h" open="0" top="0" tabpos="4">
-		<Cursor position="242" topLine="0" />
-	</File>
 	<File name="Lista.cpp" open="1" top="0" tabpos="3">
 		<Cursor position="427" topLine="23" />
 	</File>
 	<File name="Lista.h" open="1" top="0" tabpos="2">
-		<Cursor position="237" topLine="4" />
-	</File>
-	<File name="Personaje.cpp" open="0" top="0" tabpos="3">
-		<Cursor position="166" topLine="4" />
-	</File>
-	<File name="Personaje.h" open="0" top="0" tabpos="2">
-		<Cursor position="159" topLine="5" />
-	</File>
-	<File name="Tanque.cpp" open="0" top="0" tabpos="7">
-		<Cursor position="607" topLine="17" />
-	</File>
-	<File name="Tanque.h" open="0" top="0" tabpos="6">
-		<Cursor position="272" topLine="0" />
+		<Cursor position="237" topLine="3" />
 	</File>
 	<File name="main.cpp" open="1" top="1" tabpos="1">
-		<Cursor position="1095" topLine="45" />
+		<Cursor position="1140" topLine="43" />
 	</File>
 </CodeBlocks_layout_file>

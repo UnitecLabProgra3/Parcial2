@@ -41,20 +41,39 @@
 #include <fstream>
 using namespace std;
 
+void agregarScore(string nombre,int puntos)
+{
+    ofstream out("ejemplo.txt",ios::app);
+    out<<nombre<<' '<<puntos<<endl;
+}
+
 int main()
 {
-    ofstream out("ejemplo.txt");
-    out<<"Esta es una linea.";
-    out.seekp(8);
-    out<<"Esta es una prueba.";
-    out.close();
+    agregarScore("Chuy",2500);
+    agregarScore("Testa",140);
+    agregarScore("Test",500);
+    agregarScore("Maria",100);
 
     ifstream in("ejemplo.txt");
-    in.seekg(-99999,in.beg);
-    string str;
-    getline(in,str);
 
-    cout<<str;
+    int max=-99999;
+    string nombre_max="";
+
+    while(!in.eof())
+    {
+        string nombre;
+        int puntos;
+        in>>nombre;
+        in>>puntos;
+        if(max<puntos)
+        {
+            max=puntos;
+            nombre_max=nombre;
+        }
+    }
+
+    cout<<"Ganador: "<<nombre_max<<endl;
+
 
 //    char tablero[5][5]={{' ','#',' ',' ',' '},
 //                        {'E','#',' ','#','S'},
