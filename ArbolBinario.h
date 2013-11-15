@@ -11,6 +11,8 @@ class ArbolBinario
         NodoArbol*padre;
         ArbolBinario();
         void imprimir(NodoArbol*padre);
+        void getSumaPorReferencia(NodoArbol*padre,int*acumulador);
+        int getSumaPorValor(NodoArbol*padre);
         virtual ~ArbolBinario();
     protected:
     private:

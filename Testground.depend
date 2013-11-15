@@ -5,7 +5,7 @@
 1381455657 /home/turupawn/Projects/CodeBlocks/Progra 3/Ejemplos/Testground/MiClase.h
 	<iostream>
 
-1384478311 source:/home/turupawn/Projects/CodeBlocks/Progra 3/Ejemplos/Testground/main.cpp
+1384478914 source:/home/turupawn/Projects/CodeBlocks/Progra 3/Ejemplos/Testground/main.cpp
 	<vector>
 	<iostream>
 	<fstream>
@@ -64,10 +64,10 @@
 
 1383874390 /home/turupawn/Projects/CodeBlocks/Progra 3/Ejemplos/Testground/NodoArbol.h
 
-1383875800 source:/home/turupawn/Projects/CodeBlocks/Progra 3/Ejemplos/Testground/ArbolBinario.cpp
+1384480073 source:/home/turupawn/Projects/CodeBlocks/Progra 3/Ejemplos/Testground/ArbolBinario.cpp
 	"ArbolBinario.h"
 
-1383875794 /home/turupawn/Projects/CodeBlocks/Progra 3/Ejemplos/Testground/ArbolBinario.h
+1384480045 /home/turupawn/Projects/CodeBlocks/Progra 3/Ejemplos/Testground/ArbolBinario.h
 	<iostream>
 	"NodoArbol.h"
 

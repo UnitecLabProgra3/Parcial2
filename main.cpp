@@ -1,10 +1,10 @@
 #include <vector>
-
-
-//#include "Nodo.h"
-//#include "Lista.h"
-
-//#include "ArbolBinario.h"
+#include "Nodo.h"
+#include "Lista.h"
+#include "ArbolBinario.h"
+#include <iostream>
+#include <fstream>
+using namespace std;
 
 //bool encontrada=false;
 //
@@ -37,9 +37,7 @@
 //            || puedoLLegar(tablero,x_actual,y_actual-1,pasos);
 //}
 
-#include <iostream>
-#include <fstream>
-using namespace std;
+
 
 void agregarScore(string nombre,int puntos)
 {
@@ -49,30 +47,39 @@ void agregarScore(string nombre,int puntos)
 
 int main()
 {
-    agregarScore("Chuy",2500);
-    agregarScore("Testa",140);
-    agregarScore("Test",500);
-    agregarScore("Maria",100);
+    ArbolBinario arbol;
+    int*suma=new int;
+    *suma=0;
+    arbol.getSumaPorReferencia(arbol.padre,suma);
+    cout<<*suma<<endl;
 
-    ifstream in("ejemplo.txt");
+    cout<<arbol.getSumaPorValor(arbol.padre);
 
-    int max=-99999;
-    string nombre_max="";
 
-    while(!in.eof())
-    {
-        string nombre;
-        int puntos;
-        in>>nombre;
-        in>>puntos;
-        if(max<puntos)
-        {
-            max=puntos;
-            nombre_max=nombre;
-        }
-    }
-
-    cout<<"Ganador: "<<nombre_max<<endl;
+//    agregarScore("Chuy",2500);
+//    agregarScore("Testa",140);
+//    agregarScore("Test",500);
+//    agregarScore("Maria",100);
+//
+//    ifstream in("ejemplo.txt");
+//
+//    int max=-99999;
+//    string nombre_max="";
+//
+//    while(!in.eof())
+//    {
+//        string nombre;
+//        int puntos;
+//        in>>nombre;
+//        in>>puntos;
+//        if(max<puntos)
+//        {
+//            max=puntos;
+//            nombre_max=nombre;
+//        }
+//    }
+//
+//    cout<<"Ganador: "<<nombre_max<<endl;
 
 
 //    char tablero[5][5]={{' ','#',' ',' ',' '},

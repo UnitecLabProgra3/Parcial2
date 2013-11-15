@@ -19,13 +19,36 @@ ArbolBinario::ArbolBinario()
 
 void ArbolBinario::imprimir(NodoArbol* padre)
 {
-    if(padre==0)
+    if(padre==NULL)
         return;
 
     std::cout<<padre->numero<<std::endl;
 
     imprimir(padre->hijo_der);
     imprimir(padre->hijo_izq);
+}
+
+void ArbolBinario::getSumaPorReferencia(NodoArbol* padre,int*acumulador)
+{
+    if(padre==NULL)
+        return;
+
+    *acumulador+=padre->numero;
+
+    getSumaPorReferencia(padre->hijo_der,acumulador);
+    getSumaPorReferencia(padre->hijo_izq,acumulador);
+}
+
+int ArbolBinario::getSumaPorValor(NodoArbol* padre)
+{
+    if(padre==NULL)
+        return 0;
+
+    int acumulador=padre->numero;
+    acumulador+=getSumaPorValor(padre->hijo_der);
+    acumulador+=getSumaPorValor(padre->hijo_izq);
+
+    return acumulador;
 }
 
 ArbolBinario::~ArbolBinario()
