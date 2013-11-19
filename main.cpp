@@ -37,23 +37,16 @@ using namespace std;
 //            || puedoLLegar(tablero,x_actual,y_actual-1,pasos);
 //}
 
-
-
-void agregarScore(string nombre,int puntos)
-{
-    ofstream out("ejemplo.txt",ios::app);
-    out<<nombre<<' '<<puntos<<endl;
-}
-
 int main()
 {
     ArbolBinario arbol;
-    int*suma=new int;
-    *suma=0;
-    arbol.getSumaPorReferencia(arbol.padre,suma);
-    cout<<*suma<<endl;
-
-    cout<<arbol.getSumaPorValor(arbol.padre);
+    cout<<arbol.getMax(0);
+//    int*suma=new int;
+//    *suma=0;
+//    arbol.getSumaPorReferencia(arbol.padre,suma);
+//    cout<<*suma<<endl;
+//
+//    cout<<arbol.getSumaPorValor(arbol.padre);
 
 
 //    agregarScore("Chuy",2500);

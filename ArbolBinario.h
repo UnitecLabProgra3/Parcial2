@@ -13,6 +13,7 @@ class ArbolBinario
         void imprimir(NodoArbol*padre);
         void getSumaPorReferencia(NodoArbol*padre,int*acumulador);
         int getSumaPorValor(NodoArbol*padre);
+        int getMax(NodoArbol*padre);
         virtual ~ArbolBinario();
     protected:
     private:

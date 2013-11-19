@@ -2,16 +2,16 @@
 
 ArbolBinario::ArbolBinario()
 {
-    NodoArbol* n1 = new NodoArbol(1);
-    NodoArbol* n2 = new NodoArbol(2);
-    NodoArbol* n3 = new NodoArbol(3);
-    NodoArbol* n4 = new NodoArbol(4);
-    NodoArbol* n5 = new NodoArbol(5);
+    NodoArbol* n1 = new NodoArbol(5);
+    NodoArbol* n2 = new NodoArbol(3);
+    NodoArbol* n3 = new NodoArbol(6);
+    NodoArbol* n4 = new NodoArbol(9);
+    NodoArbol* n5 = new NodoArbol(1);
 
     n1->hijo_izq=n2;
     n1->hijo_der=n3;
 
-    n2->hijo_izq=n4;
+//    n2->hijo_izq=n4;
     n2->hijo_der=n5;
 
     padre=n1;
@@ -49,6 +49,24 @@ int ArbolBinario::getSumaPorValor(NodoArbol* padre)
     acumulador+=getSumaPorValor(padre->hijo_izq);
 
     return acumulador;
+}
+
+int ArbolBinario::getMax(NodoArbol* padre)
+{
+    if(padre==NULL)
+        return -99999;
+
+    if(padre->hijo_der==NULL
+       && padre->hijo_izq==NULL)
+       return padre->numero;
+
+    int max=padre->numero;
+    if(padre->hijo_der->numero>max)
+        max=padre->hijo_der->numero;
+    if(padre->hijo_izq->numero>max)
+        max=padre->hijo_izq->numero;
+
+    return max;
 }
 
 ArbolBinario::~ArbolBinario()

@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="ArbolBinario.cpp" open="1" top="0" tabpos="5">
-		<Cursor position="400" topLine="13" />
+	<File name="ArbolBinario.cpp" open="1" top="0" tabpos="6">
+		<Cursor position="1027" topLine="0" />
 	</File>
-	<File name="ArbolBinario.h" open="1" top="0" tabpos="4">
-		<Cursor position="47" topLine="0" />
+	<File name="ArbolBinario.h" open="1" top="1" tabpos="5">
+		<Cursor position="379" topLine="7" />
 	</File>
 	<File name="Lista.cpp" open="1" top="0" tabpos="3">
 		<Cursor position="427" topLine="23" />
 	</File>
 	<File name="Lista.h" open="1" top="0" tabpos="2">
-		<Cursor position="237" topLine="3" />
+		<Cursor position="269" topLine="0" />
 	</File>
-	<File name="main.cpp" open="1" top="1" tabpos="1">
-		<Cursor position="1140" topLine="43" />
+	<File name="NodoArbol.h" open="1" top="0" tabpos="4">
+		<Cursor position="89" topLine="3" />
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="1216" topLine="50" />
 	</File>
 </CodeBlocks_layout_file>
