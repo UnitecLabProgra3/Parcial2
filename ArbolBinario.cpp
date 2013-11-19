@@ -2,11 +2,11 @@
 
 ArbolBinario::ArbolBinario()
 {
-    NodoArbol* n1 = new NodoArbol(-5);
+    NodoArbol* n1 = new NodoArbol(5);
     NodoArbol* n2 = new NodoArbol(-3);
-    NodoArbol* n3 = new NodoArbol(-6);
-    NodoArbol* n4 = new NodoArbol(-9);
-    NodoArbol* n5 = new NodoArbol(-1);
+    NodoArbol* n3 = new NodoArbol(6);
+    NodoArbol* n4 = new NodoArbol(9);
+    NodoArbol* n5 = new NodoArbol(1);
 
     n1->hijo_izq=n2;
     n1->hijo_der=n3;
@@ -56,17 +56,30 @@ int ArbolBinario::getMax(NodoArbol* padre)
     if(padre==NULL)
         return -99999;
 
-    if(padre->hijo_der==NULL
-       && padre->hijo_izq==NULL)
-       return padre->numero;
-
     int max=padre->numero;
-    if(getMax(padre->hijo_der)>max)
-        max=getMax(padre->hijo_der);
-    if(getMax(padre->hijo_izq)>max)
-        max=getMax(padre->hijo_izq);
+    int max_izq=getMax(padre->hijo_der);
+    int max_der=getMax(padre->hijo_izq);
+
+    if(max_izq>max)
+        max=max_izq;
+    if(max_der>max)
+        max=max_der;
 
     return max;
+}
+
+int ArbolBinario::getMin(NodoArbol* padre)
+{
+    if(padre==NULL)
+        return 99999;
+
+    int min=padre->numero;
+    if(getMin(padre->hijo_der)<min)
+        min=getMin(padre->hijo_der);
+    if(getMin(padre->hijo_izq)<min)
+        min=getMin(padre->hijo_izq);
+
+    return min;
 }
 
 ArbolBinario::~ArbolBinario()

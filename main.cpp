@@ -40,7 +40,8 @@ using namespace std;
 int main()
 {
     ArbolBinario arbol;
-    cout<<arbol.getMax(0);
+    cout<<arbol.getMin(arbol.padre)<<endl;
+    cout<<arbol.getMax(arbol.padre)<<endl;
 //    int*suma=new int;
 //    *suma=0;
 //    arbol.getSumaPorReferencia(arbol.padre,suma);

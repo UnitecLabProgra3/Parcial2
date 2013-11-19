@@ -14,6 +14,7 @@ class ArbolBinario
         void getSumaPorReferencia(NodoArbol*padre,int*acumulador);
         int getSumaPorValor(NodoArbol*padre);
         int getMax(NodoArbol*padre);
+        int getMin(NodoArbol*padre);
         virtual ~ArbolBinario();
     protected:
     private:
